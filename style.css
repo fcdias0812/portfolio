@@ -1,0 +1,606 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* HEADER */
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 15% 0 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.logo:hover {
+    color: #6959CD;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: #6959CD;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15% 0 15%;
+    height: calc(100vh - 80px);
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 0 5% 0;
+}
+
+.main-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 25px;
+    color: #696969;
+    margin-bottom: 50px;
+}
+
+.main-content button {
+    border: none;
+    background-color: #6959CD;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 60px 20px 60px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.main-content button:hover {
+    box-shadow: 1px 1px 5px #000;
+}
+
+.main-icons {
+    display: flex;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.main-icons a {
+    color: #000;
+}
+
+.main-icons i:hover {
+    color: #6959CD;
+}
+
+/* ABOUT */
+.about {
+    width: 100%;
+    height: 100%;
+    padding: 0 20% 0 20%;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about h1 {
+    color: #6959CD;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.about-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content-img {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.about-content-text {
+    width: 50%;
+}
+
+.about-content-text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-content-text p {
+    font-size: 18px;
+    color: #696969;
+}
+
+/* SKILLS */
+.skills {
+    width: 100%;
+    height: 100%;
+    padding: 0 15% 0 15%;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills h1 {
+    color: #6959CD;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.skills-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.skills-content-text {
+    width: 50%;
+}
+
+.skills-content-text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.skills-content-text p {
+    font-size: 18px;
+    color: #696969;
+    margin-bottom: 30px;
+}
+
+.skills-content-text img {
+    max-width: 30px;
+    margin-right: 7px;
+}
+
+.skills-content-img {
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+/* PROJECTS */
+.projects {
+    width: 100%;
+    height: 100%;
+    padding: 0 15% 0 15%;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects h1 {
+    color: #6959CD;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.projects-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.projects-content-card {
+    background-color: #ebebeb;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+
+.projects-content-card:hover {
+    scale: 1.1;
+}
+
+.projects-content-card img {
+    max-width: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.projects-content-card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.projects-content-card p {
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projects-content-card a {
+    color: #000;
+    margin-left: 20px;
+}
+
+.projects-content-card a:hover {
+    color: #6959CD;
+}
+
+/* CONTACT */
+.contact {
+    width: 100%;
+    height: 100%;
+    padding: 0 15% 0 15%;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact h1 {
+    color: #6959CD;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.contact form input,
+form textarea {
+    width: 400px;
+    height: 50px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.contact form input::placeholder {
+    color: #696969;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact form button {
+    border: none;
+    width: 150px;
+    padding: 15px 0 15px 0;
+    background-color: #6959CD;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    box-shadow: 1px 1px 5px #000;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: #1f1a3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-icons a {
+    color: #fff;
+}
+
+.footer p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 950px) {
+    /* HEADER */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+        text-align: center;
+    }
+
+    .logo:hover, .nav-list a:hover{
+        color: #000;
+    }
+
+    .nav-list li {
+        padding: 15px 0;
+    }
+
+    .nav-list a {
+        font-size: 18px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    /* MAIN */
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 10% 10%;
+    }
+
+    .main-content {
+        padding: 5% 0;
+        height: auto;
+    }
+
+    .main-content h1 {
+        font-size: 30px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .main-content button {
+        font-size: 16px;
+        padding: 15px 50px;
+        margin-bottom: 30px;
+    }
+
+    .main-content button:hover{
+        box-shadow: none;
+    }
+
+    .main-icons {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .main-icons i:hover{
+        color: #000;
+    }
+
+    .main-img {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 5% 10%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .about h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content-img {
+        max-width: 100%;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .about-content-text {
+        width: 100%;
+    }
+
+    .about-content-text h1 {
+        font-size: 24px;
+    }
+
+    .about-content-text p {
+        font-size: 16px;
+    }
+
+    /* SKILLS */
+    .skills-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-content-text {
+        width: 100%;
+    }
+
+    .skills-content-img {
+        display: none;
+    }
+
+    .skills-content-text img {
+        max-width: 40px;
+        margin: 5px;
+    }
+
+    /* PROJECTS */
+    .projects {
+        padding: 0 5% 0 5%;
+    }
+
+    .projects-content {
+        gap: 50px;
+    }
+
+    .projects-content-card {
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        transition: none;
+        padding-bottom: 10px;
+    }
+
+    .projects-content-card img {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .projects-content-card h2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .projects-content-card p {
+        font-size: 14px;
+    }
+
+    .projects-content-card a:hover{
+        color: #000;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 0 5% 0 5%;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+    }
+
+    .contact h1 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .contact form button {
+        width: 100%;
+    }
+
+    .contact form button:hover{
+        box-shadow: none;
+    }
+
+    /* FOOTER */
+    .footer {
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .footer h1 {
+        font-size: 25px;
+    }
+
+    .footer-icons {
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
