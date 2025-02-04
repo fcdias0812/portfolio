@@ -19,7 +19,7 @@
 ## 📦 Como visualizar o projeto localmente  
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/portfolio.git
+git clone https://github.com/fcdias0812/portfolio
 
 # Acesse a pasta do projeto
 cd portfolio
