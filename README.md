@@ -4,6 +4,7 @@
 
 ## 🎨 Demonstração  
 🔗 [Acesse meu portfólio aqui](https://fcdias0812.github.io/portfolio/)
+📸 ![Portfolio](design.png)
 
 ## 🛠️ Tecnologias Utilizadas  
 - HTML5  
