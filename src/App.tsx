@@ -26,7 +26,7 @@ import website from "./assets/links/website.png";
 export default function App() {
   return (
     <div className="bg-zinc-900">
-      <header className="fixed bottom-4 left-1/2 transform -translate-x-1/2 py-2 px-4 md:px-7 bg-white/80 backdrop-blur-xs rounded-full shadow-lg">
+      <header className="fixed bottom-4 left-1/2 -translate-x-1/2 py-2 px-4 md:px-7 bg-white/80 backdrop-blur-xs rounded-full shadow-lg">
         <nav className="flex gap-4 items-center">
           <div className="py-2 md:hover:px-2 md:hover:bg-zinc-200 rounded-full transition-all duration-300 md:cursor-pointer">
             <a href="#home">
@@ -79,7 +79,7 @@ export default function App() {
             </h3>
             <a
               href="#projetos"
-              className="bg-blue-400 text-white w-fit flex gap-4 items-center rounded-md px-4 py-2"
+              className="bg-blue-400 md:hover:bg-blue-900 transition-all duration-500 md:hover:scale-120 text-white w-fit flex gap-4 items-center rounded-md px-4 py-2"
             >
               Conheça meus projetos <FaArrowRight size={15} />{" "}
             </a>
