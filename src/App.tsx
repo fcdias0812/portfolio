@@ -99,7 +99,7 @@ export default function App() {
             <div className="flex flex-col gap-4">
               <p>
                 Meu nome é <span className="text-blue-500">Fabrício Dias</span>{" "}
-                e sou desenvolvedor front-end em formação, com um olhar atento
+                e sou desenvolvedor full stack em formação, com um olhar atento
                 para o design, a performance e a experiência do usuário.
                 Atualmente, curso{" "}
                 <span className="text-blue-500">
@@ -126,9 +126,14 @@ export default function App() {
                 Desde então, venho construindo meu caminho com dedicação,
                 curiosidade e muita vontade de evoluir. Trabalho com{" "}
                 <span className="text-blue-500">HTML</span>,{" "}
-                <span className="text-blue-500">CSS</span>,
-                <span className="text-blue-500">JavaScript</span> e{" "}
-                <span className="text-blue-500">React.js</span>, e busco
+                <span className="text-blue-500">CSS</span>,{" "}
+                <span className="text-blue-500">JavaScript</span>,{" "}
+                <span className="text-blue-500">React.js</span>,{" "}
+                <span className="text-blue-500">Next.js</span>,{" "}
+                <span className="text-blue-500">Node.js</span>,{" "}
+                <span className="text-blue-500">Firebase</span>,{" "}
+                <span className="text-blue-500">MongoDB</span> e{" "}
+                <span className="text-blue-500">PostgreeSQL</span> e busco
                 constantemente aprimorar minhas habilidades técnicas e criativas
                 para entregar soluções modernas, acessíveis e eficientes.
               </p>
