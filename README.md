@@ -26,7 +26,7 @@ Este é o repositório do meu portfolio pessoal, desenvolvido com React e TypeSc
 
 ## 🔗 Links
 
-- [Portfolio Online](https://portfolio-fcdias0812.vercel.app/)
+- [Portfolio Online](https://portfolio-fabricios-projects-88e3c3d0.vercel.app/)
 - [LinkedIn](https://www.linkedin.com/in/fcdias0812/)
 - [GitHub](https://github.com/fcdias0812)
 
