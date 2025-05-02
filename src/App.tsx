@@ -22,7 +22,6 @@ import mypetshop from "./assets/projects/mypetshop.png";
 
 import github from "./assets/links/github.png";
 import website from "./assets/links/website.png";
-import tailwindcss from "@tailwindcss/vite";
 
 export default function App() {
   return (
