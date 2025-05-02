@@ -18,10 +18,11 @@ import devcarrinho from "./assets/projects/devcarrinho.png";
 import linktree from "./assets/projects/linktree.png";
 import primeflix from "./assets/projects/primeflix.png";
 import devfrases from "./assets/projects/devfrases.png";
-import calculadoraidade from "./assets/projects/calculadoraidade.png";
+import mypetshop from "./assets/projects/mypetshop.png";
 
 import github from "./assets/links/github.png";
 import website from "./assets/links/website.png";
+import tailwindcss from "@tailwindcss/vite";
 
 export default function App() {
   return (
@@ -157,6 +158,43 @@ export default function App() {
             Meus projetos
           </h1>
           <div className="bg-zinc-900 p-4 rounded-md grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
+              <img
+                src={mypetshop}
+                alt="Imagem do projeto"
+                className="mb-4 rounded-t-md"
+              />
+              <div className="flex flex-col h-full justify-between gap-2 ml-2 mr-2 mb-2">
+                <div className="flex flex-col gap-2.5">
+                  <span className="text-lg font-bold">My Petshop</span>
+                  <p>
+                    Aplicação frontend desenvolvida com React para um petshop.
+                    Utilizada para treinar conhecimentos, e o context API.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <div className="flex gap-2.5 flex-wrap">
+                    <Technologies img={react} name="React.js" />
+                    <Technologies img={typescript} name="TypeScript" />
+                    <Technologies img={tailwind} name="Tailwind CSS" />
+                    <Technologies img={firebase} name="Firebase" />
+                    <Technologies img={vercel} name="Vercel" />
+                  </div>
+                  <div className="flex gap-2.5">
+                    <Links
+                      img={github}
+                      name="GitHub"
+                      href="https://github.com/fcdias0812/mypetshop"
+                    />
+                    <Links
+                      img={website}
+                      name="Visite o site"
+                      href="https://mypetshop-sooty.vercel.app/"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
               <img
                 src={devcarrinho}
@@ -326,44 +364,6 @@ export default function App() {
                       img={website}
                       name="Visite o site"
                       href="https://gerador-frase.vercel.app/"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
-              <img
-                src={calculadoraidade}
-                alt="Imagem do projeto"
-                className="mb-4 rounded-t-md"
-              />
-              <div className="flex flex-col h-full justify-between gap-2 ml-2 mr-2 mb-2">
-                <div className="flex flex-col gap-2.5">
-                  <span className="text-lg font-bold">
-                    Calculadora de Idade
-                  </span>
-                  <p>
-                    Sistema criado com o intuito de praticar datas com React.js.
-                    Projeto web que ao colocar sua data de nascimento, calcula
-                    sua idade se baseando nos meses e dias atuais.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2.5">
-                  <div className="flex gap-2.5 flex-wrap">
-                    <Technologies img={react} name="React.js" />
-                    <Technologies img={typescript} name="TypeScript" />
-                    <Technologies img={vercel} name="Vercel" />
-                  </div>
-                  <div className="flex gap-2.5">
-                    <Links
-                      img={github}
-                      name="GitHub"
-                      href="https://github.com/fcdias0812/calcular_idade"
-                    />
-                    <Links
-                      img={website}
-                      name="Visite o site"
-                      href="https://calcular-idade-gilt.vercel.app/"
                     />
                   </div>
                 </div>
