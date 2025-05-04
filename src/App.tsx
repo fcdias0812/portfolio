@@ -17,7 +17,7 @@ import devcurrency from "./assets/projects/devcurrency.png";
 import devcarrinho from "./assets/projects/devcarrinho.png";
 import linktree from "./assets/projects/linktree.png";
 import primeflix from "./assets/projects/primeflix.png";
-import devfrases from "./assets/projects/devfrases.png";
+import webcarros from "./assets/projects/webcarros.png";
 import mypetshop from "./assets/projects/mypetshop.png";
 
 import github from "./assets/links/github.png";
@@ -159,6 +159,46 @@ export default function App() {
           <div className="bg-zinc-900 p-4 rounded-md grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
             <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
               <img
+                src={webcarros}
+                alt="Imagem do projeto"
+                className="mb-4 rounded-t-md"
+              />
+              <div className="flex flex-col h-full justify-between gap-2 ml-2 mr-2 mb-2">
+                <div className="flex flex-col gap-2.5">
+                  <span className="text-lg font-bold">Web Carros</span>
+                  <p>
+                    O WebCarros é uma solução completa que permite aos usuários
+                    cadastrar, visualizar e gerenciar anúncios de veículos de
+                    forma intuitiva e responsiva. A plataforma oferece uma
+                    experiência fluida tanto para vendedores quanto para
+                    compradores.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <div className="flex gap-2.5 flex-wrap">
+                    <Technologies img={react} name="React.js" />
+                    <Technologies img={typescript} name="TypeScript" />
+                    <Technologies img={tailwind} name="Tailwind CSS" />
+                    <Technologies img={firebase} name="Firebase" />
+                    <Technologies img={vercel} name="Vercel" />
+                  </div>
+                  <div className="flex gap-2.5">
+                    <Links
+                      img={github}
+                      name="GitHub"
+                      href="https://github.com/fcdias0812/webcarros"
+                    />
+                    <Links
+                      img={website}
+                      name="Visite o site"
+                      href="https://webcarros-eight.vercel.app/"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
+              <img
                 src={mypetshop}
                 alt="Imagem do projeto"
                 className="mb-4 rounded-t-md"
@@ -167,8 +207,11 @@ export default function App() {
                 <div className="flex flex-col gap-2.5">
                   <span className="text-lg font-bold">My Petshop</span>
                   <p>
-                    Aplicação frontend desenvolvida com React para um petshop.
-                    Utilizada para treinar conhecimentos, e o context API.
+                    O MyPetshop é uma plataforma simples e intuitiva que permite
+                    aos usuários visualizar produtos de uma API e adicioná-los
+                    ao carrinho de compras. O foco principal do site é
+                    proporcionar uma experiência fluida na seleção de itens para
+                    pets.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2.5">
@@ -204,8 +247,10 @@ export default function App() {
                 <div className="flex flex-col gap-2.5">
                   <span className="text-lg font-bold">Dev Carrinho</span>
                   <p>
-                    Aplicação web desenvolvida com React exclusivamente para
-                    simular um carrinho de e-commerce, com tecnologias reais.
+                    O DevCarrinho é um e-commerce prático e responsivo que
+                    permite aos usuários acessar produtos de uma API e
+                    adicioná-los ao carrinho com facilidade. A principal
+                    funcionalidade é a experiência fluida de compras online.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2.5">
@@ -235,8 +280,10 @@ export default function App() {
                 <div className="flex flex-col gap-2.5">
                   <span className="text-lg font-bold">Dev Currency</span>
                   <p>
-                    Sistema web feito em React para monitorar cotação de moedas
-                    virtuais em tempo real.
+                    O DevCurrency é um sistema web desenvolvido em React que
+                    permite aos usuários acompanhar em tempo real a cotação de
+                    moedas virtuais, oferecendo uma visualização clara e
+                    dinâmica das principais criptomoedas do mercado.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2.5">
@@ -270,8 +317,10 @@ export default function App() {
                 <div className="flex flex-col gap-2.5">
                   <span className="text-lg font-bold">Linktree</span>
                   <p>
-                    Sistema de Linktree produzido em React com painel
-                    administrativo para cadastrar links e redes sociais.
+                    O Linktree é um sistema desenvolvido em React que permite
+                    criar uma página de links personalizada, com painel
+                    administrativo para cadastrar e gerenciar links e redes
+                    sociais de forma prática e centralizada.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2.5">
@@ -307,9 +356,10 @@ export default function App() {
                 <div className="flex flex-col gap-2.5">
                   <span className="text-lg font-bold">Prime Flix</span>
                   <p>
-                    Aplicação web desenvolvida com React que mostra os
-                    principais filmes em lançamento em tempo real, podendo ou
-                    não adicionar aos favoritos.
+                    O Prime Flix é uma aplicação web feita com React que exibe
+                    em tempo real os principais filmes em lançamento, permitindo
+                    aos usuários visualizar detalhes e adicionar títulos à lista
+                    de favoritos.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2.5">
@@ -328,41 +378,6 @@ export default function App() {
                       img={website}
                       name="Visite o site"
                       href="https://prime-flix-two-coral.vercel.app/"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
-              <img
-                src={devfrases}
-                alt="Imagem do projeto"
-                className="mb-4 rounded-t-md"
-              />
-              <div className="flex flex-col h-full justify-between gap-2 ml-2 mr-2 mb-2">
-                <div className="flex flex-col gap-2.5">
-                  <span className="text-lg font-bold">Dev Frases</span>
-                  <p>
-                    Sistema criado com o intuito de praticar conceitos de
-                    estados com React.js. Projeto web que gera frases.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2.5">
-                  <div className="flex gap-2.5 flex-wrap">
-                    <Technologies img={react} name="React.js" />
-                    <Technologies img={typescript} name="TypeScript" />
-                    <Technologies img={vercel} name="Vercel" />
-                  </div>
-                  <div className="flex gap-2.5">
-                    <Links
-                      img={github}
-                      name="GitHub"
-                      href="https://github.com/fcdias0812/gerador_frase"
-                    />
-                    <Links
-                      img={website}
-                      name="Visite o site"
-                      href="https://gerador-frase.vercel.app/"
                     />
                   </div>
                 </div>
