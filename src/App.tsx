@@ -6,17 +6,17 @@ import { Links } from "./component/links";
 
 import perfilLogo from "./assets/perfilLogo.jpg";
 
+import next from "./assets/technologies/next.png";
 import react from "./assets/technologies/react.png";
 import typescript from "./assets/technologies/typescript.png";
 import tailwind from "./assets/technologies/tailwind.png";
 import firebase from "./assets/technologies/firebase.png";
-import localstorage from "./assets/technologies/localstorage.png";
 import vercel from "./assets/technologies/vercel.png";
 
 import devcurrency from "./assets/projects/devcurrency.png";
 import devcarrinho from "./assets/projects/devcarrinho.png";
 import linktree from "./assets/projects/linktree.png";
-import primeflix from "./assets/projects/primeflix.png";
+import tarefasplus from "./assets/projects/tarefasplus.png";
 import webcarros from "./assets/projects/webcarros.png";
 import mypetshop from "./assets/projects/mypetshop.png";
 
@@ -157,6 +157,44 @@ export default function App() {
             Meus projetos
           </h1>
           <div className="bg-zinc-900 p-4 rounded-md grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
+              <img
+                src={tarefasplus}
+                alt="Imagem do projeto"
+                className="mb-4 rounded-t-md"
+              />
+              <div className="flex flex-col h-full justify-between gap-2 ml-2 mr-2 mb-2">
+                <div className="flex flex-col gap-2.5">
+                  <span className="text-lg font-bold">Tarefas+</span>
+                  <p>
+                    Tarefas+ é uma aplicação web moderna para gerenciamento de
+                    tarefas, desenvolvida com Next.js, Firebase e NextAuth.
+                    Permite aos usuários criar, compartilhar e gerenciar suas
+                    tarefas de forma eficiente.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  <div className="flex gap-2.5 flex-wrap">
+                    <Technologies img={next} name="Next.js" />
+                    <Technologies img={typescript} name="TypeScript" />
+                    <Technologies img={firebase} name="Firebase" />
+                    <Technologies img={vercel} name="Vercel" />
+                  </div>
+                  <div className="flex gap-2.5">
+                    <Links
+                      img={github}
+                      name="GitHub"
+                      href="https://github.com/fcdias0812/tarefasplus"
+                    />
+                    <Links
+                      img={website}
+                      name="Visite o site"
+                      href="https://tarefasplus-pi.vercel.app/"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
               <img
                 src={webcarros}
@@ -341,43 +379,6 @@ export default function App() {
                       img={website}
                       name="Visite o site"
                       href="https://devlinks-gray.vercel.app/"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-zinc-600 text-white rounded-md flex flex-col gap-2 border-1 border-zinc-500/60">
-              <img
-                src={primeflix}
-                alt="Imagem do projeto"
-                className="mb-4 rounded-t-md"
-              />
-              <div className="flex flex-col h-full justify-between gap-2 ml-2 mr-2 mb-2">
-                <div className="flex flex-col gap-2.5">
-                  <span className="text-lg font-bold">Prime Flix</span>
-                  <p>
-                    O Prime Flix é uma aplicação web feita com React que exibe
-                    em tempo real os principais filmes em lançamento, permitindo
-                    aos usuários visualizar detalhes e adicionar títulos à lista
-                    de favoritos.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2.5">
-                  <div className="flex gap-2.5 flex-wrap">
-                    <Technologies img={react} name="React.js" />
-                    <Technologies img={localstorage} name="Local Storage" />
-                    <Technologies img={vercel} name="Vercel" />
-                  </div>
-                  <div className="flex gap-2.5">
-                    <Links
-                      img={github}
-                      name="GitHub"
-                      href="https://github.com/fcdias0812/prime_flix"
-                    />
-                    <Links
-                      img={website}
-                      name="Visite o site"
-                      href="https://prime-flix-two-coral.vercel.app/"
                     />
                   </div>
                 </div>
